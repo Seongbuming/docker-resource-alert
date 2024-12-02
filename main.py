@@ -15,7 +15,7 @@ SMTP_SERVER = os.getenv("SMTP_SERVER")
 SMTP_PORT = int(os.getenv("SMTP_PORT"))
 RECIPIENT = os.getenv("RECIPIENT")
 MEMORY_THRESHOLD_PERCENT = int(os.getenv("MEMORY_THRESHOLD", 80))  # 메모리 임계값 (%)
-CPU_THRESHOLD_PERCENT = int(os.getenv("CPU_THRESHOLD", 90))  # CPU 임계값 (%)
+CPU_THRESHOLD_PERCENT = int(os.getenv("CPU_THRESHOLD", 80))  # CPU 임계값 (%)
 CHECK_INTERVAL = int(os.getenv("CHECK_INTERVAL", 60))  # 초 단위
 
 def send_email(subject, body):
