@@ -24,6 +24,9 @@ def send_email(subject, body):
     msg["From"] = EMAIL
     msg["To"] = RECIPIENT
 
+    print(subject)
+    print(f"       - {body}")
+
     try:
         with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as server:
             server.ehlo()
